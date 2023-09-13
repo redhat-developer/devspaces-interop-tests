@@ -1,0 +1,72 @@
+--------------------------Digest map--------------------------
+Key: registry.redhat.io/rhscl/mongodb-36-rhel7:1-50 Value: @sha256:9f799d356d7d2e442bde9d401b720600fd9059a3d8eefea6f3b2ffa721c0dc73
+Key: registry.redhat.io/devspaces/theia-endpoint-rhel8:3.3 Value: @sha256:2d927b80a8f7cc9df7313e2b137559a797ecb82ef114bea16efae1d087a32254
+Key: registry.redhat.io/devspaces/udi-rhel8:3.3 Value: @sha256:aa39ede33bcbda6aa2723d271c79ab8d8fd388c7dfcbc3d4ece745b7e9c84193
+Key: registry.redhat.io/devspaces/idea-rhel8:3.3 Value: @sha256:49ecbcf1c6507057822c1aa3b901724f05551264913eb303dec8ec3273b096ba
+Key: registry.redhat.io/devspaces/machineexec-rhel8:3.3 Value: @sha256:f849e92075ccb720ea211691d379a381fdb158c25e083a219a711278d3614981
+Key: registry.redhat.io/devspaces/code-rhel8:3.3 Value: @sha256:d5efb27645f7ed12d449e8c35f01070b2fb6d247d79c94f374d8781371a17318
+Key: registry.redhat.io/devspaces/theia-rhel8:3.3 Value: @sha256:cc2719d356069f7e8a2a55e688096872793d84f30c8d577e1e24aa3002132948
+--------------------------------------------------------------
+Checking /var/www/html/devfiles/03_java11-maven-gradle/meta.yaml
+Checking /var/www/html/devfiles/03_java11-maven-lombok/meta.yaml
+Checking /var/www/html/devfiles/03_java11-maven-quarkus/meta.yaml
+Checking /var/www/html/devfiles/04_nodejs-mongo/meta.yaml
+Checking /var/www/html/devfiles/04_nodejs-simple/meta.yaml
+Checking /var/www/html/devfiles/04_python/meta.yaml
+Checking /var/www/html/devfiles/05_cpp/meta.yaml
+Checking /var/www/html/devfiles/05_dotnet/meta.yaml
+Checking /var/www/html/devfiles/05_go/meta.yaml
+Checking /var/www/html/devfiles/05_php-cake/meta.yaml
+Checking /var/www/html/devfiles/03_java11-maven-gradle/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/03_java11-maven-gradle/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/03_java11-maven-lombok/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/03_java11-maven-lombok/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/03_java11-maven-quarkus/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/03_java11-maven-quarkus/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/04_nodejs-mongo/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/04_nodejs-mongo/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/04_nodejs-simple/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/04_nodejs-simple/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/04_python/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/04_python/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/05_cpp/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/05_cpp/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/05_dotnet/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/05_dotnet/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/05_go/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/05_go/devworkspace-che-theia-latest.yaml
+Checking /var/www/html/devfiles/05_php-cake/devworkspace-che-code-insiders.yaml
+Checking /var/www/html/devfiles/05_php-cake/devworkspace-che-theia-latest.yaml
+Updating internal URL in files to http://devfile-registry.openshift-devspaces.svc:8080
+Updating devfiles to point at internal project zip files
++ [[ -x /usr/sbin/httpd ]]
++ /usr/sbin/httpd -D FOREGROUND
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.129.2.18. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 23 22:57:49.722335 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity for Apache/2.9.2 (http://www.modsecurity.org/) configured.
+[Fri Dec 23 22:57:49.722348 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: APR compiled version="1.6.3"; loaded version="1.6.3"
+[Fri Dec 23 22:57:49.722351 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: PCRE compiled version="8.42 "; loaded version="8.42 2018-03-20"
+[Fri Dec 23 22:57:49.722362 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: LUA compiled version="Lua 5.3"
+[Fri Dec 23 22:57:49.722363 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: YAJL compiled version="2.1.0"
+[Fri Dec 23 22:57:49.722365 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: LIBXML compiled version="2.9.7"
+[Fri Dec 23 22:57:49.722366 2022] [:notice] [pid 191:tid 140244945395136] ModSecurity: Status engine is currently disabled, enable it by set SecStatusEngine to On.
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.129.2.18. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 23 22:57:49.756861 2022] [lbmethod_heartbeat:notice] [pid 191:tid 140244945395136] AH02282: No slotmem from mod_heartmonitor
+[Fri Dec 23 22:57:49.810676 2022] [mpm_event:notice] [pid 191:tid 140244945395136] AH00489: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k configured -- resuming normal operations
+[Fri Dec 23 22:57:49.810705 2022] [core:notice] [pid 191:tid 140244945395136] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+10.129.2.1 - - [23/Dec/2022:22:57:57 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:07 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:17 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:27 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:27 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:37 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:37 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:47 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:47 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:57 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:58:57 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:07 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:07 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:17 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:17 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:27 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"
+10.129.2.1 - - [23/Dec/2022:22:59:27 +0000] "GET /devfiles/ HTTP/1.1" 200 6886 "-" "kube-probe/1.24"

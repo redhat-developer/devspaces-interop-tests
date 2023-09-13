@@ -1,0 +1,124 @@
+--------------------------Digest map--------------------------
+Key: registry.redhat.io/rhscl/mongodb-36-rhel7:1-50 Value: @sha256:9f799d356d7d2e442bde9d401b720600fd9059a3d8eefea6f3b2ffa721c0dc73
+Key: registry.redhat.io/devspaces/theia-endpoint-rhel8:3.3 Value: @sha256:2d927b80a8f7cc9df7313e2b137559a797ecb82ef114bea16efae1d087a32254
+Key: registry.redhat.io/devspaces/udi-rhel8:3.3 Value: @sha256:aa39ede33bcbda6aa2723d271c79ab8d8fd388c7dfcbc3d4ece745b7e9c84193
+Key: registry.redhat.io/devspaces/idea-rhel8:3.3 Value: @sha256:49ecbcf1c6507057822c1aa3b901724f05551264913eb303dec8ec3273b096ba
+Key: registry.redhat.io/devspaces/machineexec-rhel8:3.3 Value: @sha256:f849e92075ccb720ea211691d379a381fdb158c25e083a219a711278d3614981
+Key: registry.redhat.io/devspaces/code-rhel8:3.3 Value: @sha256:d5efb27645f7ed12d449e8c35f01070b2fb6d247d79c94f374d8781371a17318
+Key: registry.redhat.io/devspaces/theia-rhel8:3.3 Value: @sha256:cc2719d356069f7e8a2a55e688096872793d84f30c8d577e1e24aa3002132948
+--------------------------------------------------------------
+Checking meta /var/www/html/v3/plugins/bmewburn/vscode-intelephense-client/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/bmewburn/vscode-intelephense-client/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/che-incubator/che-code/insiders/devfile.yaml
+Checking meta /var/www/html/v3/plugins/che-incubator/che-idea/latest/devfile.yaml
+Checking meta /var/www/html/v3/plugins/che-incubator/cpptools/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/che-incubator/cpptools/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/dbaeumer/vscode-eslint/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/dbaeumer/vscode-eslint/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/eclipse/che-machine-exec-plugin/latest/devfile.yaml
+Checking meta /var/www/html/v3/plugins/eclipse/che-machine-exec-plugin/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/eclipse/che-theia/latest/devfile.yaml
+Checking meta /var/www/html/v3/plugins/eclipse/che-theia/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/eclipse-cdt/cdt-gdb-vscode/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/eclipse-cdt/cdt-gdb-vscode/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/eclipse-cdt/cdt-vscode/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/eclipse-cdt/cdt-vscode/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/felixfbecker/php-debug/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/felixfbecker/php-debug/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/felixfbecker/vscode-php-debug/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/felixfbecker/vscode-php-debug/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/github/vscode-pull-request-github/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/github/vscode-pull-request-github/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/golang/go/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/golang/go/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/llvm-vs-code-extensions/vscode-clangd/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/llvm-vs-code-extensions/vscode-clangd/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/ms-kubernetes-tools/vscode-kubernetes-tools/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/ms-kubernetes-tools/vscode-kubernetes-tools/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/ms-python/python/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/ms-python/python/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/ms-vscode/js-debug/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/ms-vscode/js-debug/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/ms-vscode/vscode-github-pullrequest/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/ms-vscode/vscode-github-pullrequest/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/dependency-analytics/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/dependency-analytics/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/fabric8-analytics/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/fabric8-analytics/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java11/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java11/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java8/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/java8/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/php/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/php/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/php-debugger/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/php-debugger/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/project-initializer/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/project-initializer/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/quarkus-java11/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/quarkus-java11/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-apache-camel/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-apache-camel/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-camelk/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-camelk/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-microprofile/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-microprofile/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-openshift-connector/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-openshift-connector/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-quarkus/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-quarkus/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-xml/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-xml/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-yaml/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/redhat/vscode-yaml/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/sonarsource/sonarlint-vscode/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/sonarsource/sonarlint-vscode/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/vscjava/vscode-java-debug/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/vscjava/vscode-java-debug/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/vscjava/vscode-java-test/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/vscjava/vscode-java-test/latest/meta.yaml
+Checking meta /var/www/html/v3/plugins/vscode/typescript-language-features/latest/che-theia-plugin.yaml
+Checking meta /var/www/html/v3/plugins/vscode/typescript-language-features/latest/meta.yaml
+Updating relative:extension in files to http://plugin-registry.openshift-devspaces.svc:8080
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.129.2.75. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.129.2.75. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 19 23:28:25.586304 2022] [lbmethod_heartbeat:notice] [pid 357:tid 139740119973312] AH02282: No slotmem from mod_heartmonitor
+[Mon Dec 19 23:28:25.587093 2022] [http2:warn] [pid 357:tid 139740119973312] AH02951: mod_ssl does not seem to be enabled
+[Mon Dec 19 23:28:25.589909 2022] [mpm_event:notice] [pid 357:tid 139740119973312] AH00489: Apache/2.4.37 (Red Hat Enterprise Linux) configured -- resuming normal operations
+[Mon Dec 19 23:28:25.589935 2022] [core:notice] [pid 357:tid 139740119973312] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+10.129.2.1 - - [19/Dec/2022:23:28:32 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:28:32 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:28:42 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:28:42 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:28:52 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:28:52 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:02 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:02 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:02 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:02 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:12 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:12 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:12 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:12 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:22 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:22 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:22 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:22 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:32 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:32 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:32 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:32 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:42 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:42 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:42 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:42 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:52 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:52 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:52 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:29:52 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:30:02 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:30:02 +0000] "GET /plugins/ HTTP/1.1" 302 219 "-" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:30:02 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"
+10.129.2.1 - - [19/Dec/2022:23:30:02 +0000] "GET /v3/plugins/ HTTP/1.1" 200 16285 "http://10.129.2.75:8080/plugins/" "kube-probe/1.24"

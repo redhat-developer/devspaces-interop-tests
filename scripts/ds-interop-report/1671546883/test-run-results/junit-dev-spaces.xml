@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="Dev Spaces Operator Test Harness" tests="14" failures="2" errors="0" time="214.32">
+      <testcase name="[Services] Check if devspaces services exist in cluster" classname="Dev Spaces Operator Test Harness" time="0.004635015"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Secrets] Secret `self-signed-certificate` should exist" classname="Dev Spaces Operator Test Harness" time="0.002964233"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [PersistentVolumeClaims] PVC `postgres-data` should be created" classname="Dev Spaces Operator Test Harness" time="0.003389713"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Custom Resources] Check if CRD already exist in Cluster" classname="Dev Spaces Operator Test Harness" time="0.033288498"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [ConfigMaps] Config map `che` should exist" classname="Dev Spaces Operator Test Harness" time="0.00276116"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check `Dev Spaces Operator` integrity" classname="Dev Spaces Operator Test Harness" time="0.009135246"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check `Postgres DB` integrity" classname="Dev Spaces Operator Test Harness" time="0.020185281"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check `Devfile Registry` integrity" classname="Dev Spaces Operator Test Harness" time="0.015893501"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check `Plugin Registry` integrity" classname="Dev Spaces Operator Test Harness" time="0.011450571"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check `Dev Spaces server` integrity" classname="Dev Spaces Operator Test Harness" time="0.01781373"></testcase>
+      <testcase name="[Dev Spaces Test Harness] [Pods] Check if Dev Spaces Server is already up" classname="Dev Spaces Operator Test Harness" time="2.767988328"></testcase>
+      <testcase name="[WORKSPACES] Create workspace from devfile registry Obtain CheCluster object" classname="Dev Spaces Operator Test Harness" time="2.7722240940000002"></testcase>
+      <testcase name="[WORKSPACES] Create workspace from devfile registry Obtain and patch Java Devfile from DevFile Registry" classname="Dev Spaces Operator Test Harness" time="0.015138174">
+          <failure type="Failure">/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests/workspace_tests.go:38&#xA;Expected&#xA;    &lt;int&gt;: 404&#xA;to equal&#xA;    &lt;int&gt;: 200&#xA;/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests/workspace_tests.go:44</failure>
+      </testcase>
+      <testcase name="[WORKSPACES] Create workspace from devfile registry Create Java Workspace" classname="Dev Spaces Operator Test Harness" time="5.51793674">
+          <failure type="Panic">/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests/workspace_tests.go:55&#xA;Test Panicked&#xA;/usr/lib/golang/src/runtime/panic.go:221&#xA;&#xA;Panic: runtime error: invalid memory address or nil pointer dereference&#xA;&#xA;Full stack:&#xA;gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/workspaces.(*Controller).TestWorkspaceStartAndDelete(0x0, 0x0)&#xA;&#x9;/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/workspaces/start.go:39 +0x42a&#xA;gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests.glob..func7.1.3()&#xA;&#x9;/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests/workspace_tests.go:59 +0xb2&#xA;command-line-arguments.TestHarnessCodeReadyWorkspaces(0x4062f9)&#xA;&#x9;/gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/cmd/operator_osd/codererady_addon_osd_test.go:128 +0x27b&#xA;testing.tRunner(0xc000527040, 0x1ab3420)&#xA;&#x9;/usr/lib/golang/src/testing/testing.go:1259 +0x102&#xA;created by testing.(*T).Run&#xA;&#x9;/usr/lib/golang/src/testing/testing.go:1306 +0x35a</failure>
+      </testcase>
+  </testsuite>

@@ -1,0 +1,154 @@
+Using custom assembly from /home/user/devspaces
+Found a custom cert. Adding it to java trust store /home/user/cacerts based on /usr/lib/jvm/jre/lib/security/cacerts
+Trust this certificate? [no]:  Certificate was added to keystore
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Dec-2022 22:40:45.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.14
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 2 2021 22:01:36 UTC
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.14.0
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.18.0-372.36.1.el8_6.x86_64
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-11.0.17.0.8-2.el8_6.x86_64
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+8-LTS
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Red Hat, Inc.
+20-Dec-2022 22:40:45.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/user/devspaces/tomcat
+20-Dec-2022 22:40:45.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/user/devspaces/tomcat
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/user/devspaces/tomcat/conf/logging.properties
+20-Dec-2022 22:40:45.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:MaxRAMPercentage=85.0
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dche.docker.network=bridge
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djavax.net.ssl.trustStore=/home/user/cacerts
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djavax.net.ssl.trustStorePassword=changeit
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dport.http=8080
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dche.home=/home/user/devspaces
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dche.logs.dir=/logs/
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dche.logs.level=INFO
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djuli-logback.configurationFile=file:/home/user/devspaces/tomcat/conf/tomcat-logger.xml
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Dec-2022 22:40:45.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0022
+20-Dec-2022 22:40:45.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dche.local.conf.dir=/home/user/devspaces/tomcat/conf/
+20-Dec-2022 22:40:45.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Dec-2022 22:40:45.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/user/devspaces/tomcat
+20-Dec-2022 22:40:45.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/user/devspaces/tomcat
+20-Dec-2022 22:40:45.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/user/devspaces/tomcat/temp
+20-Dec-2022 22:40:46.270 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Dec-2022 22:40:46.355 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1479] milliseconds
+20-Dec-2022 22:40:46.456 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Dec-2022 22:40:46.456 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.14]
+20-Dec-2022 22:40:46.544 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/user/devspaces/tomcat/webapps/ROOT.war]
+20-Dec-2022 22:40:50.744 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/user/devspaces/tomcat/webapps/ROOT.war] has finished in [4,200] ms
+20-Dec-2022 22:40:50.746 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/user/devspaces/tomcat/webapps/api.war]
+2022-12-20 22:41:00,659[main]             [INFO ] [.e.c.c.d.JNDIDataSourceFactory 63]   - This=org.eclipse.che.core.db.postgresql.PostgreSQLJndiDataSourceFactory@5999e13d obj=ResourceRef[className=javax.sql.DataSource,factoryClassLocation=null,factoryClassName=org.apache.naming.factory.ResourceFactory,{type=scope,content=Shareable},{type=auth,content=Container},{type=singleton,content=true},{type=factory,content=org.eclipse.che.core.db.postgresql.PostgreSQLJndiDataSourceFactory}] name=che Context=org.apache.naming.NamingContext@6ac6ab9c environment={}
+2022-12-20 22:41:01,442[main]             [INFO ] [.e.c.a.d.WsMasterServletModule 52]   - Running in native-user mode ...
+2022-12-20 22:41:06,867[main]             [INFO ] [o.j.p.kubernetes.KUBE_PING 131]      - namespace openshift-devspaces set; clustering enabled
+
+-------------------------------------------------------------------
+GMS: address=devspaces-74ff944869-f94rf-44400, cluster=RemoteSubscriptionChannel, physical address=10.128.2.116:7800
+-------------------------------------------------------------------
+2022-12-20 22:41:10,286[main]             [INFO ] [o.jgroups.protocols.pbcast.GMS 125]  - devspaces-74ff944869-f94rf-44400: no members discovered after 3327 ms: creating cluster as coordinator
+2022-12-20 22:41:10,319[main]             [INFO ] [o.j.p.kubernetes.KUBE_PING 131]      - namespace openshift-devspaces set; clustering enabled
+
+-------------------------------------------------------------------
+GMS: address=devspaces-74ff944869-f94rf-42026, cluster=WorkspaceLocks, physical address=10.128.2.116:7801
+-------------------------------------------------------------------
+2022-12-20 22:41:13,356[main]             [INFO ] [o.jgroups.protocols.pbcast.GMS 125]  - devspaces-74ff944869-f94rf-42026: no members discovered after 3033 ms: creating cluster as coordinator
+2022-12-20 22:41:13,365[main]             [INFO ] [o.j.p.kubernetes.KUBE_PING 131]      - namespace openshift-devspaces set; clustering enabled
+
+-------------------------------------------------------------------
+GMS: address=devspaces-74ff944869-f94rf-61303, cluster=WorkspaceStateCache, physical address=10.128.2.116:7802
+-------------------------------------------------------------------
+2022-12-20 22:41:16,401[main]             [INFO ] [o.jgroups.protocols.pbcast.GMS 125]  - devspaces-74ff944869-f94rf-61303: no members discovered after 3025 ms: creating cluster as coordinator
+2022-12-20 22:41:16,683[main]             [INFO ] [o.f.c.i.d.DbSupportFactory 44]       - Database: jdbc:postgresql://postgres:5432/dbche (PostgreSQL 13.7)
+2022-12-20 22:41:16,726[main]             [INFO ] [o.f.c.i.util.VersionPrinter 44]      - Flyway 4.2.0 by Boxfuse
+2022-12-20 22:41:16,744[main]             [INFO ] [o.f.c.i.d.DbSupportFactory 44]       - Database: jdbc:postgresql://postgres:5432/dbche (PostgreSQL 13.7)
+2022-12-20 22:41:16,781[main]             [INFO ] [i.f.CustomSqlMigrationResolver 158]  - Searching for SQL scripts in locations [classpath:che-schema]
+2022-12-20 22:41:16,942[main]             [INFO ] [o.f.c.i.command.DbValidate 44]       - Successfully validated 63 migrations (execution time 00:00.164s)
+2022-12-20 22:41:16,963[main]             [INFO ] [o.f.c.i.m.MetaDataTableImpl 44]      - Creating Metadata table: "public"."schema_version"
+2022-12-20 22:41:17,043[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Current version of schema "public": << Empty Schema >>
+2022-12-20 22:41:17,156[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.0.0.8.1 - 1__init.sql
+2022-12-20 22:41:17,544[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.0.0.9.1 - 1__add_index_on_workspace_temporary.sql
+2022-12-20 22:41:17,565[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.0.0.9.2 - 2__update_local_links_in_environments.sql
+2022-12-20 22:41:17,578[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.2.0.1 - 1__increase_project_attributes_values_length.sql
+2022-12-20 22:41:17,638[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.4.0.1 - 1__drop_user_to_account_relation.sql
+2022-12-20 22:41:17,659[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.4.0.2 - 2__create_missed_account_indexes.sql
+2022-12-20 22:41:17,682[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.6.0.1 - 1__add_exec_agent_where_terminal_agent_is_present.sql
+2022-12-20 22:41:17,761[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.7.0.1 - 1__add_factory.sql
+2022-12-20 22:41:17,889[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.7.0.2 - 2__remove_match_policy.sql
+2022-12-20 22:41:17,901[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.8.0.1 - 1__add_foreigh_key_indexes.sql
+2022-12-20 22:41:18,088[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.11.0.1 - 1__optimize_user_search.sql
+2022-12-20 22:41:18,117[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.19.0.0.1 - 0.1__add_permissions.sql
+2022-12-20 22:41:18,261[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.19.0.0.2 - 0.2__add_resources.sql
+2022-12-20 22:41:18,312[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 5.19.0.0.3 - 0.3__add_organization.sql
+2022-12-20 22:41:18,399[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.1 - 1__add_path_to_serverconf.sql
+2022-12-20 22:41:18,407[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.2 - 2__rename_agents_to_installers.sql
+2022-12-20 22:41:18,442[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.3 - 3__add_installer.sql
+2022-12-20 22:41:18,494[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.3.1 - 3.1__remove_old_recipe_permissions.sql
+2022-12-20 22:41:18,504[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.4 - 4__remove_old_recipe.sql
+2022-12-20 22:41:18,513[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.5 - 5__add_machine_env.sql
+2022-12-20 22:41:18,544[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.6 - 6__remove_snapshots.sql
+2022-12-20 22:41:18,555[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.7 - 7__add_machine_volumes.sql
+2022-12-20 22:41:18,582[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.8 - 8__add_serverconf_attributes.sql
+2022-12-20 22:41:18,611[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.9 - 9__increase_externalmachine_env_value_length.sql
+2022-12-20 22:41:18,619[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.10 - 10__move_dockerimage_recipe_location_to_content.sql
+2022-12-20 22:41:18,627[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.11 - 11__increase_workspace_attributes_values_length.sql
+2022-12-20 22:41:18,633[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.0.0.12 - 12__remove_stack_sources.sql
+2022-12-20 22:41:18,640[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.3.0.1 - 1__add_fk_indexes.sql
+2022-12-20 22:41:18,656[main]             [WARN ] [o.f.c.i.dbsupport.JdbcTemplate 48]   - DB: identifier "che_index_factory_on_projects_loaded_action_value_action_entity_id" will be truncated to "che_index_factory_on_projects_loaded_action_value_action_entity" (SQL State: 42622 - Error Code: 0)
+2022-12-20 22:41:18,662[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.3.0.1.1 - 1.1__add_fk_indexes.sql
+2022-12-20 22:41:18,696[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.4.0.1 - 1__add_workspace_expirations.sql
+2022-12-20 22:41:18,712[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.4.0.2 - 2__add_signature_key.sql
+2022-12-20 22:41:18,745[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.4.0.3 - 3__add_k8s_runtimes.sql
+2022-12-20 22:41:18,808[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.10.0.1 - 1__add_workspace_cfg_attributes.sql
+2022-12-20 22:41:18,825[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.10.0.2 - 2__change_signature_key_pair_id.sql
+2022-12-20 22:41:18,840[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.11.0.1 - 1__add_signature_key_constraints.sql
+2022-12-20 22:41:18,863[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.12.0.1 - 1__rename_project_attributes_values_field.sql
+2022-12-20 22:41:18,870[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.15.0.1 - 1__remove_not_null_constraint_from_env_name_fields.sql
+2022-12-20 22:41:18,883[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.15.0.2 - 2__add_commands_to_k8s_runtime.sql
+2022-12-20 22:41:18,914[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.16.0.1 - 1__increase_workspace_config_attributes_values_length.sql
+2022-12-20 22:41:18,921[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.16.0.2 - 2__create_workspace_activity_table.sql
+2022-12-20 22:41:18,969[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.16.0.3 - 3__bootstrap_ws_activity_data.sql
+2022-12-20 22:41:18,983[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 6.17.0.1 - 1__convert_enums_to_strings.sql
+2022-12-20 22:41:18,998[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.4.0.1 - 1__add_devfile.sql
+2022-12-20 22:41:19,204[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.5.0.1 - 1__devfile_command_reference.sql
+2022-12-20 22:41:19,212[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.6.0.1 - 1__add_devfile_component_prefs.sql
+2022-12-20 22:41:19,228[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.7.0.1 - 1__add_registry_url_to_devfile_component.sql
+2022-12-20 22:41:19,239[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.8.0.2.0.1 - 1__devfile_metadata.sql
+2022-12-20 22:41:19,245[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.0.0.8.0.2.0.2 - 2__devfile_make_some_fields_optional.sql
+2022-12-20 22:41:19,252[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.1.0.1 - 1__change_devfile_component_preferences_type.sql
+2022-12-20 22:41:19,264[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.1.0.1.1 - 1.1__remove_stack_permissions.sql
+2022-12-20 22:41:19,275[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.1.0.2 - 2__remove_stacks.sql
+2022-12-20 22:41:19,286[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.2.0.1 - 1__remove_installers.sql
+2022-12-20 22:41:19,297[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.4.0.1 - 1__add_devfile_source_sparse_checkout_dir.sql
+2022-12-20 22:41:19,341[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.4.0.2 - 2__add_preview_url_to_devfile_command.sql
+2022-12-20 22:41:19,353[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.6.0.1 - 1__drop_che_workspace_expiration.sql
+2022-12-20 22:41:19,362[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.10.0.1 - 1__add_devfile_plugin_editor_component_cpu_limit_request.sql
+2022-12-20 22:41:19,369[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.10.0.2 - 2__add_devfile_plugin_editor_component_ram_request.sql
+2022-12-20 22:41:19,376[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.11.0.1 - 1__update_inconsistent_stopped_workspace_activities.sql
+2022-12-20 22:41:19,383[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.16.0.1 - 1__add_devfile_component_automount_workspace_secrets.sql
+2022-12-20 22:41:19,389[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.20.0.1 - 1__userdevfile.sql
+2022-12-20 22:41:19,428[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.20.0.1.1 - 1.1__add_userdevfile_permissions.sql
+2022-12-20 22:41:19,468[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.21.0.1 - 1__remove_installers.sql
+2022-12-20 22:41:19,476[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Migrating schema "public" to version 7.26.0.1 - 1__remove_factory_button_and_image.sql
+2022-12-20 22:41:19,484[main]             [INFO ] [o.f.c.i.command.DbMigrate 44]        - Successfully applied 63 migrations to schema "public" (execution time 00:02.522s).
+2022-12-20 22:41:21,762[main]             [INFO ] [o.j.p.kubernetes.KUBE_PING 131]      - namespace openshift-devspaces set; clustering enabled
+
+-------------------------------------------------------------------
+GMS: address=devspaces-74ff944869-f94rf-33990, cluster=EclipseLinkCommandChannel, physical address=10.128.2.116:7803
+-------------------------------------------------------------------
+2022-12-20 22:41:24,853[main]             [INFO ] [o.jgroups.protocols.pbcast.GMS 125]  - devspaces-74ff944869-f94rf-33990: no members discovered after 3086 ms: creating cluster as coordinator
+2022-12-20 22:41:24,909[main]             [INFO ] [o.e.c.a.w.s.WorkspaceRuntimes 182]   - Configured factories for environments: '[openshift, kubernetes, no-environment]'
+2022-12-20 22:41:24,909[main]             [INFO ] [o.e.c.a.w.s.WorkspaceRuntimes 183]   - Registered infrastructure 'openshift'
+2022-12-20 22:41:24,977[main]             [INFO ] [o.e.c.a.w.s.WorkspaceRuntimes 694]   - Infrastructure is tracking 0 active runtimes that need to be stopped
+2022-12-20 22:41:25,069[main]             [INFO ] [o.e.c.a.c.u.ApiInfoLogInformer 36]   - Eclipse Che Api Core: Build info '7.56.1-SNAPSHOT' scmRevision 'd775629c4e0d82b5141163f78ca1a92b7b3f824a' implementationVersion '7.56.1-SNAPSHOT'
+2022-12-20 22:41:25,143[main]             [WARN ] [p.s.AdminPermissionInitializer 69]   - Admin admin not found yet.
+20-Dec-2022 22:41:25.469 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/user/devspaces/tomcat/webapps/api.war] has finished in [34,723] ms
+20-Dec-2022 22:41:25.470 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/user/devspaces/tomcat/webapps/swagger.war]
+20-Dec-2022 22:41:25.679 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/user/devspaces/tomcat/webapps/swagger.war] has finished in [209] ms
+20-Dec-2022 22:41:25.683 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Dec-2022 22:41:25.692 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [39337] milliseconds
