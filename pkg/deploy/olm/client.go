@@ -6,7 +6,7 @@ import (
 	operatorv1 "github.com/operator-framework/api/pkg/operators/v1"
 	operatorsv1alpha1 "github.com/operator-framework/api/pkg/operators/v1alpha1"
 	olmversioned "github.com/operator-framework/operator-lifecycle-manager/pkg/api/client/clientset/versioned"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"

@@ -3,8 +3,8 @@ package deploy
 import (
 	"context"
 
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 
 	orgv2 "github.com/eclipse-che/che-operator/api/v2"
 	gherr "github.com/pkg/errors"

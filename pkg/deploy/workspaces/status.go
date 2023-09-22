@@ -1,14 +1,12 @@
 package workspaces
 
-import (
-	// "encoding/json"
-	// "errors"
-	// "net/http"
-	//"time"
+// "encoding/json"
+// "errors"
+// "net/http"
+//"time"
 
-	// TODO remove? "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	// TODO remove ? "go.uber.org/zap"
-)
+// TODO remove? "github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+// TODO remove ? "go.uber.org/zap"
 
 func (w *Controller) statusWorkspace(workspace *Workspace, desiredStatus string) (boolean bool, err error) {
 	//timeout := time.After(7 * time.Minute)

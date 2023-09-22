@@ -1,4 +1,4 @@
-module gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e
+module github.com/redhat-developer/devspaces-interop-tests
 
 go 1.18
 

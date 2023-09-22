@@ -3,9 +3,10 @@ package github
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"strings"
 
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
 )
 
 type GitHubTagResponse struct {
@@ -23,8 +24,9 @@ func (c *API) GetLatestCodeReadyWorkspacesTag() (tag string, err error) {
 	if err != nil {
 		hlog.Log.Fatal(err)
 	}
-
+	fmt.Println("TagName:", gh.TagName)
 	version := strings.Split(gh.TagName, "-GA")[0]
+	fmt.Println("Version Dev Spaces:", version)
 
 	if _, err = c.Get(context.Background(), "aplication/json", nil); err != nil {
 		return "", err

@@ -5,8 +5,8 @@ import (
 
 	"github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 	"k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"

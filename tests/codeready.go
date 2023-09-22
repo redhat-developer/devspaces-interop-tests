@@ -7,9 +7,9 @@ import (
 	"io/ioutil"
 
 	"github.com/onsi/ginkgo"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 	"go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"
 )
@@ -20,7 +20,7 @@ const (
 
 	// Pod Names used to get info
 	DevSpacesOperatorLabel = "olm.owner.kind=ClusterServiceVersion"
-	PostgresLabel          = "component=postgres"
+	DashboardLabel         = "component=devspaces-dashboard"
 	DevFileLabel           = "component=devfile-registry"
 	PluginRegistryLabel    = "component=plugin-registry"
 	DevSpacesServerLabel   = "component=devspaces"
@@ -28,11 +28,8 @@ const (
 	//Custom Resource name to get info
 	CRDName = "checlusters.org.eclipse.che"
 
-	// PVC name used for postgres-data
-	PostgresPVCName = "postgres-data"
-
 	// Secret name used for add ca.crt
-	secretSelfSignedCrt = "postgres-credentials"
+	secretSelfSignedCrt = "self-signed-certificate"
 )
 
 type PodInfo struct {

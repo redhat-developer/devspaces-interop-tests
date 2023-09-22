@@ -10,14 +10,14 @@ import (
 	"github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/reporters"
 	"github.com/onsi/gomega"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	reporter "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/reporters"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/api/github"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/olm"
-	_ "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/tests"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	reporter "github.com/redhat-developer/devspaces-interop-tests/internal/reporters"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/api/github"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/olm"
+	_ "github.com/redhat-developer/devspaces-interop-tests/tests"
 	"go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -40,8 +40,8 @@ func init() {
 	registerCheFlags(flag.CommandLine)
 }
 
-//SynchronizedBeforeSuite blocks are primarily meant to solve the problem of setting up the custom resources for
-//Dev Spaces
+// SynchronizedBeforeSuite blocks are primarily meant to solve the problem of setting up the custom resources for
+// Dev Spaces
 var _ = ginkgo.SynchronizedBeforeSuite(func() []byte {
 	// Initialize Dev Spaces Kubernetes client to create resources in a giving namespace
 	k8sClient, err := client.NewK8sClient()
@@ -50,16 +50,16 @@ var _ = ginkgo.SynchronizedBeforeSuite(func() []byte {
 	}
 
 	hlog.Log.Info("Installing Dev Spaces objects before running Test Harness...")
-	// In case if --osd-provider=false CRW will start to be installed from a specific catalog source
+	// In case if --osd-provider=false DS will start to be installed from a specific catalog source
 	if !testContext.Config.IS_OSD {
 		github := github.NewGitubClient("redhat-developer", "devspaces-chectl")
 		crwVersion, err := github.GetLatestCodeReadyWorkspacesTag()
 		if err != nil {
 			hlog.Log.Fatal("Failed to get version from github.", zap.Error(err))
 		}
-		if crwVersion == "" {
+		/*if crwVersion == "" {
 			hlog.Log.Fatal("Failed to get Dev Spaces version from github.", zap.String("crwVersion", crwVersion))
-		}
+		}*/
 
 		if testContext.Config.CSVName == "" {
 			hlog.Log.Info("Flag `--csv-name` is not defined. Getting latest stable version of Dev Spaces from github...")
@@ -117,7 +117,7 @@ var _ = ginkgo.SynchronizedAfterSuite(func() {
 }, func() {})
 
 func TestHarnessCodeReadyWorkspaces(t *testing.T) {
-	// configure zap logging for codeReady addon, Zap Logger create a file <*.log> where is possible
+	// configure zap logging for Dev Spaces addon, Zap Logger create a file <*.log> where is possible
 	//to find information about addon execution.
 	gomega.RegisterFailHandler(ginkgo.Fail)
 
@@ -144,7 +144,7 @@ func GetNamespace(namespace string) (*v1.Namespace, error) {
 	return k8sClient.Kube().CoreV1().Namespaces().Get(context.TODO(), namespace, metav1.GetOptions{})
 }
 
-// Check where codeReady workspace operator it is installed
+// Check where devspaces operator it is installed
 func CheckOSDNamespace() bool {
 	hlog.Log.Info("Start to detect OSD namespace where operator it is installed...")
 	OsdNamespaces := []string{OSDCrwNamespace, OSDQeNamespace}

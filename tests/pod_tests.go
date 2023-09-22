@@ -8,10 +8,10 @@ import (
 
 	"github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 	"go.uber.org/zap"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
@@ -33,20 +33,20 @@ var _ = KubeDescribe("[Pods]", func() {
 		Expect(err).NotTo(HaveOccurred(), "failed to get information from pod %v\n", DevSpacesOperatorLabel)
 	})
 
-	ginkgo.It("Check `Postgres DB` integrity", func() {
-		hlog.Log.Info("Getting information and metrics from Postgres DB pod")
-		postgres, err := k8sClient.Kube().CoreV1().Pods(testContext.Config.DevSpacesNamespace).List(context.TODO(), metav1.ListOptions{LabelSelector: PostgresLabel})
+	ginkgo.It("Check `Dashboard` integrity", func() {
+		hlog.Log.Info("Getting information and metrics from Dashboard pod")
+		dashboard, err := k8sClient.Kube().CoreV1().Pods(testContext.Config.DevSpacesNamespace).List(context.TODO(), metav1.ListOptions{LabelSelector: DashboardLabel})
 
-		Expect(postgres).NotTo(BeNil())
+		Expect(dashboard).NotTo(BeNil())
 		if err != nil {
-			hlog.Log.Panic("Error on getting information about postgres pod.")
+			hlog.Log.Panic("Error on getting information about dashboard pod.")
 		}
 
-		if err := DescribePod(postgres); err != nil {
-			hlog.Log.Fatal("Failed to set metadata about postgres pod.")
+		if err := DescribePod(dashboard); err != nil {
+			hlog.Log.Fatal("Failed to set metadata about dashboard pod.")
 		}
 
-		Expect(err).NotTo(HaveOccurred(), "failed to get information from pod %v\n", PostgresLabel)
+		Expect(err).NotTo(HaveOccurred(), "failed to get information from pod %v\n", DashboardLabel)
 	})
 
 	ginkgo.It("Check `Devfile Registry` integrity", func() {
@@ -122,7 +122,7 @@ var _ = KubeDescribe("[Pods]", func() {
 		decoder := json.NewDecoder(resp.Body)
 		err = decoder.Decode(&t)
 		if err != nil {
-			testContext.Instance.DevSpacesServerIsUp = true // TODO remove 
+			testContext.Instance.DevSpacesServerIsUp = true // TODO remove
 		} else {
 			testContext.Instance.DevSpacesServerIsUp = true
 		}

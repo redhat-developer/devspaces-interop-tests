@@ -1,15 +1,15 @@
 package tests
 
 import (
-	 "context"
+	"context"
 
-	 "github.com/onsi/ginkgo"
-	 . "github.com/onsi/gomega"
-	 "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	 "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	 testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
-	 "go.uber.org/zap"
-	 metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
+	"go.uber.org/zap"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 var _ = KubeDescribe("[Secrets]", func() {
@@ -19,7 +19,7 @@ var _ = KubeDescribe("[Secrets]", func() {
 	}
 
 	ginkgo.It("Secret `self-signed-certificate` should exist", func() {
-		hlog.Log.Info("Checking secrets created for code ready workspaces")
+		hlog.Log.Info("Checking secrets created for Dev Spaces")
 		secret, err := k8sClient.Kube().CoreV1().Secrets(testContext.Config.DevSpacesNamespace).Get(context.TODO(), secretSelfSignedCrt, metav1.GetOptions{})
 
 		if err != nil {

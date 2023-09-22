@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -161,8 +161,8 @@ func (pm *PodStartupLatencyDataMonitor) updateMetric(key string, data *PodStartu
 		hlog.Log.Infof("Pod '%s' successfully created in namespace '%s'  ", key, testContext.Config.DevSpacesNamespace)
 
 		// TODO: Find a better way to identify pods running
-		if strings.Contains(key, "postgres") {
-			testContext.Instance.CRWPodTime.PostgresUpTime = startupTime
+		if strings.Contains(key, "devspaces-dashboard") {
+			testContext.Instance.CRWPodTime.DashboardUpTime = startupTime
 		}
 
 		if strings.Contains(key, "plugin-registry") {
@@ -173,7 +173,7 @@ func (pm *PodStartupLatencyDataMonitor) updateMetric(key string, data *PodStartu
 			testContext.Instance.CRWPodTime.DevFileUpTime = startupTime
 		}
 
-		if strings.Contains(key, "devspaces") && !strings.Contains(key, "codeready-operator") {
+		if strings.Contains(key, "devspaces") && !strings.Contains(key, "devspaces-operator") {
 			testContext.Instance.CRWPodTime.CodeReadyUpTime = startupTime
 		}
 

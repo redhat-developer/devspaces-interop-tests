@@ -17,10 +17,10 @@ type metadata struct {
 	// ClusterTimeUp return how many time take Dev Spaces to be up
 	ClusterTimeUp float64 `json:"cluster-time-up,int"`
 
-	// DevSpacesPodsInfo returns all codeready workspaces container infos
+	// DevSpacesPodsInfo returns all Dev Spaces containers infos
 	CodeReadyPodsInfo []CodeReadyPods `json:"pods-info,string"`
 
-	//CRWPodTime returns all codeready workspaces up time from pulled image to start container
+	//CRWPodTime returns all Dev Spaces up time from pulled image to start container
 	CRWPodTime PodTimes `json:"pods-up-times int"`
 
 	//DevSpacesServerIsUp Returns true or false depending if code ready server is UP
@@ -28,8 +28,8 @@ type metadata struct {
 }
 
 type PodTimes struct {
-	// StartUp time of postgresql pod
-	PostgresUpTime float64 `json:"postgres-up-time,float64"`
+	// StartUp time of dashboard pod
+	DashboardUpTime float64 `json:"devspaces-dashboard-up-time,float64"`
 
 	// StartUp time of devfile pod
 	DevFileUpTime float64 `json:"devfile-up-time,float64"`
@@ -37,8 +37,8 @@ type PodTimes struct {
 	// StartUp time of plugin-registry pod
 	PluginRegUpTime float64 `json:"plugins-up-time,float64"`
 
-	// StartUp time of codeready server pod
-	CodeReadyUpTime float64 `json:"codeready-up-time,float64"`
+	// StartUp time of devspaces server pod
+	CodeReadyUpTime float64 `json:"devspaces-up-time,float64"`
 }
 
 type CodeReadyPods struct {
@@ -93,7 +93,7 @@ type TestConfig struct {
 // Config instance
 var Config = TestConfig{}
 
-//Metadata instance
+// Metadata instance
 var Instance = metadata{}
 
 // WriteToJSON will marshall the metadata struct and write it into the given file.

@@ -3,18 +3,18 @@
 set -e
 
 USER_NAME=$1
-DS_VERSION=$2
+
+if [[ ${USER_NAME} == ""  ]]; then
+  export USER_NAME="admin"
+  echo "[INFO] Into a distinct namespace '<user-name>-devspaces' will run a test workspace.
+By default will be used the 'admin' user-name You can specify an user-name of your OCP cluster 
+as a parameter of this script, e.g.: 'execute-test-harness.sh <user-name>'"
+fi
+
 DEVSPACES_NAMESPACE="openshift-devspaces"
 OPERATORS_NAMESPACE="openshift-operators"
 USER_NAMESPACE="${USER_NAME}-devspaces"
-REPORT_DIR="ds-interop-report"
-
-if [[ ${USER_NAME} == ""  ]]; then
-  echo "Please specify user-name of your OCP cluster as the first argument to run test harness."
-  echo "into a distinct namespace '<user-name>-devspaces' where will run our test workspace"
-  echo "execute-test-harness.sh <user-name> !!ds-version"
-  exit 1
-fi
+REPORT_DIR="test-run-results"
 
 # Ensure there are no already existed projects
 oc delete namespace ${DEVSPACES_NAMESPACE} --wait=true --ignore-not-found
@@ -39,12 +39,15 @@ cat kubeconfig.template.yml |
 cat ${TMP_KUBECONFIG_YML}
 
 oc delete configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig || true
+
+echo "[INFO] Creating configmap 'ds-testsuite-kubeconfig' in namespace '${OPERATORS_NAMESPACE}'"
 oc create configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig \
     --from-file=config=${TMP_KUBECONFIG_YML}
 
-if [[ "${DS_VERSION}" == "" ]]; then
-    export DS_VERSION=$(oc get packagemanifest devspaces -o json | jq -r '.status.channels[] | select(.name == "stable") | .currentCSV')
-fi
+echo "[INFO] Dev Spaces will use the latest production version"
+export DS_VERSION=$(oc get packagemanifest devspaces -o json | jq -r '.status.channels[] | select(.name == "stable") | .currentCSV')
+echo "[INFO] The version of Dev Spaces: ${DS_VERSION}"
+
 
 cat test-harness.pod.template.yml |
     sed -e "s#__ID__#${ID}#g" |
@@ -57,6 +60,7 @@ cat test-harness.pod.template.yml |
 cat ${TMP_POD_YML}
 
 # start the test
+echo "[INFO] Creating pod 'ds-testsuite-${ID}' in namespace '${OPERATORS_NAMESPACE}'"
 oc create -f ${TMP_POD_YML}
 
 # wait for the pod to start

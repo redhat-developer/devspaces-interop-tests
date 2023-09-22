@@ -5,9 +5,9 @@ import (
 
 	v1alpha2 "github.com/devfile/api/pkg/apis/workspaces/v1alpha2"
 	v2 "github.com/eclipse-che/che-operator/api/v2"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy"
 	"go.uber.org/zap"
 )
 
@@ -36,9 +36,13 @@ func (w *Controller) TestWorkspaceStartAndDelete(devWorkspaceDefenition *v1alpha
 
 	hlog.Log.Info("Successfully started workspace", zap.String("workspaceID", workspace.ID))
 
-	w.DeleteWorkspace(getCheUrl(resource), workspace)
+	w.DeleteWorkspace(getCheUrl(resource), workspace.ID)
 
 	return workspace, err
+}
+
+func Skip(s string) {
+	panic("unimplemented")
 }
 
 // CreateAndRunWorkspace creates and runs an workspace using DevWorkspace yaml

@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 
 	v1alpha1 "github.com/operator-framework/api/pkg/operators/v1alpha1"
 	gherr "github.com/pkg/errors"

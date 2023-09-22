@@ -4,16 +4,16 @@ import (
 	"context"
 	"sync"
 
-	olmversioned "github.com/operator-framework/operator-lifecycle-manager/pkg/api/client/clientset/versioned"
 	v1alpha1 "github.com/operator-framework/api/pkg/operators/v1alpha1"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	olmversioned "github.com/operator-framework/operator-lifecycle-manager/pkg/api/client/clientset/versioned"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
+	"go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	cl "sigs.k8s.io/controller-runtime/pkg/client"
-	"go.uber.org/zap"
 )
 
 // OlmController useful to add all kubernetes objects to cluster.

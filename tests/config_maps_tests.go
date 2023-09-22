@@ -5,9 +5,9 @@ import (
 
 	"github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 	"go.uber.org/zap"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

@@ -6,10 +6,10 @@ import (
 	"time"
 
 	orgv2 "github.com/eclipse-che/che-operator/api/v2"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
-	testContext "gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/context"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
+	testContext "github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/context"
 	"go.uber.org/zap"
 )
 

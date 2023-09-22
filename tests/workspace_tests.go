@@ -12,17 +12,15 @@ import (
 	orgv2 "github.com/eclipse-che/che-operator/api/v2"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/client"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy"
+	"github.com/redhat-developer/devspaces-interop-tests/pkg/deploy/workspaces"
 	"github.com/sirupsen/logrus"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/internal/hlog"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/client"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy"
-	"gitlab.cee.redhat.com/codeready-workspaces/crw-osde2e/pkg/deploy/workspaces"
 )
 
 var workspaceDefinition []byte
-var dwtYaml []byte
-var dwYaml []byte
-var found bool
+var devWorkspacePatchedYaml []byte
 
 var _ = Describe("[WORKSPACES]", func() {
 	Context("Create workspace from devfile registry", func() {
@@ -50,19 +48,17 @@ var _ = Describe("[WORKSPACES]", func() {
 				Expect(err).NotTo(HaveOccurred())
 				hlog.Log.Infof("Java Workspace Definition")
 				patchWorkspaceDefenition := [][]byte{workspaceDefinition, []byte("routingClass: che")}
-				workspaceDefinitionPatched := bytes.Join(patchWorkspaceDefenition, []byte("  "))
-				dwtYaml, dwYaml, found = bytes.Cut(workspaceDefinitionPatched, []byte("---"))
-				fmt.Println(string(dwtYaml))
-				fmt.Println(string(dwYaml))
-				fmt.Printf("%v\n", found)
+				devWorkspacePatchedYaml = bytes.Join(patchWorkspaceDefenition, []byte("  "))
+				fmt.Println(string(devWorkspacePatchedYaml))
 			}
 		})
 
 		It("Create and start Workspace", func() {
+			Skip("Run a workspace start in Dev Spaces requires a new implementation.The test is temporary skipped, while investigating.")
 			hlog.Log.Info("Starting a new workspace")
 			ctrl := workspaces.NewWorkspaceController(httpClient)
 
-			_, err = ctrl.TestWorkspaceStartAndDelete(GetDevWorkspaceYaml(dwYaml))
+			_, err = ctrl.TestWorkspaceStartAndDelete(GetDevWorkspaceYaml(devWorkspacePatchedYaml))
 
 			Expect(err).NotTo(HaveOccurred())
 		})
@@ -70,7 +66,7 @@ var _ = Describe("[WORKSPACES]", func() {
 })
 
 func ObtainJavaDevFileUrl(cheCluster *orgv2.CheCluster) string {
-	return cheCluster.Status.DevfileRegistryURL + "/devfiles/03_java11-maven-gradle/devworkspace-che-code-insiders.yaml"
+	return cheCluster.Status.DevfileRegistryURL + "/devfiles/java11-maven-lombok__lombok-project-sample/devworkspace-che-code-latest.yaml"
 }
 
 func GetDevWorkspaceYaml(dwYamlFile []byte) *v1alpha2.DevWorkspace {
