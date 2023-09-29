@@ -36,7 +36,6 @@ cat kubeconfig.template.yml |
     sed -e "s#__OPENSHIFT_API_TOKEN__#${OPENSHIFT_API_TOKEN}#g" |
     cat >${TMP_KUBECONFIG_YML}
 
-cat ${TMP_KUBECONFIG_YML}
 
 oc delete configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig || true
 
@@ -57,7 +56,6 @@ cat test-harness.pod.template.yml |
     sed -e "s#__DEV_SPACES_VERSION__#${DS_VERSION}#g" |
     cat >${TMP_POD_YML}
 
-cat ${TMP_POD_YML}
 
 # start the test
 echo "[INFO] Creating pod 'ds-testsuite-${ID}' in namespace '${OPERATORS_NAMESPACE}'"
