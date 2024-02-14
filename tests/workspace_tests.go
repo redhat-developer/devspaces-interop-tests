@@ -66,7 +66,7 @@ var _ = Describe("[WORKSPACES]", func() {
 })
 
 func ObtainJavaDevFileUrl(cheCluster *orgv2.CheCluster) string {
-	return cheCluster.Status.DevfileRegistryURL + "/devfiles/java11-maven-lombok__lombok-project-sample/devworkspace-che-code-latest.yaml"
+	return cheCluster.Status.DevfileRegistryURL + "/devfiles/java-maven-lombok__lombok-project-sample/devworkspace-che-code-latest.yaml"
 }
 
 func GetDevWorkspaceYaml(dwYamlFile []byte) *v1alpha2.DevWorkspace {
