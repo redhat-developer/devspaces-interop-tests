@@ -50,7 +50,9 @@ var _ = ginkgo.SynchronizedBeforeSuite(func() []byte {
 	}
 
 	hlog.Log.Info("Installing Dev Spaces objects before running Test Harness...")
-	// In case if --osd-provider=false DS will start to be installed from a specific catalog source
+	hlog.Log.Info("This is additional")
+        return nil
+        // In case if --osd-provider=false DS will start to be installed from a specific catalog source
 	if !testContext.Config.IS_OSD {
 		github := github.NewGitubClient("redhat-developer", "devspaces-chectl")
 		crwVersion, err := github.GetLatestCodeReadyWorkspacesTag()
