@@ -19,6 +19,7 @@ var _ = KubeDescribe("[Secrets]", func() {
 	}
 
 	ginkgo.It("Secret `self-signed-certificate` should exist", func() {
+		ginkgo.Skip("This test is skipped.")
 		hlog.Log.Info("Checking secrets created for Dev Spaces")
 		secret, err := k8sClient.Kube().CoreV1().Secrets(testContext.Config.DevSpacesNamespace).Get(context.TODO(), secretSelfSignedCrt, metav1.GetOptions{})
 

@@ -16,10 +16,6 @@ OPERATORS_NAMESPACE="openshift-operators"
 USER_NAMESPACE="${USER_NAME}-devspaces"
 REPORT_DIR="test-run-results"
 
-# Ensure there are no already existed projects
-oc delete namespace ${DEVSPACES_NAMESPACE} --wait=true --ignore-not-found
-oc delete namespace ${USER_NAMESPACE} --wait=true --ignore-not-found
-
 oc create namespace ${DEVSPACES_NAMESPACE}
 oc create namespace ${USER_NAMESPACE}
 oc project ${USER_NAMESPACE}
