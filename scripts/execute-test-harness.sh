@@ -23,10 +23,7 @@ oc project ${USER_NAMESPACE}
 ID=$(date +%s)
 OPENSHIFT_API_URL=$(oc config view --minify -o jsonpath='{.clusters[*].cluster.server}')
 OPENSHIFT_API_TOKEN=$(oc whoami -t)
-
-echo "USER: $(oc whoami)"
-echo "TOKEN: $(oc whoami -t)"
-export OPENSHIFT_API_USER=$(oc whoami)
+OPENSHIFT_API_USER=$(oc whoami)
 
 TMP_POD_YML=$(mktemp)
 TMP_KUBECONFIG_YML=$(mktemp)
@@ -82,10 +79,7 @@ sleep 3
 mkdir -p ${REPORT_DIR}/${ID}
 
 oc rsync -n ${OPERATORS_NAMESPACE} \
-    ds-testsuite-${ID}:/test-run-results ${REPORT_DIR}/${ID} -c download || true
+    ds-testsuite-${ID}:/test-run-results ${REPORT_DIR}/${ID} -c download
 
 oc exec -n ${OPERATORS_NAMESPACE} ds-testsuite-${ID} -c download \
-    -- touch /tmp/done || true
-
-echo "Retrieve test results"
-oc cp ds-testsuite-${ID}:/test-run-results ${REPORT_DIR}
+    -- touch /tmp/done
