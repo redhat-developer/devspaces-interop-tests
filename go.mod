@@ -1,6 +1,6 @@
 module github.com/redhat-developer/devspaces-interop-tests
 
-go 1.18
+go 1.23
 
 require (
 	github.com/devfile/api v0.0.0-20201222180101-071eecafa93c
