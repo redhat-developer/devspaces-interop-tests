@@ -169,10 +169,6 @@ func (pm *PodStartupLatencyDataMonitor) updateMetric(key string, data *PodStartu
 			testContext.Instance.CRWPodTime.PluginRegUpTime = startupTime
 		}
 
-		if strings.Contains(key, "devfile-registry") {
-			testContext.Instance.CRWPodTime.DevFileUpTime = startupTime
-		}
-
 		if strings.Contains(key, "devspaces") && !strings.Contains(key, "devspaces-operator") {
 			testContext.Instance.CRWPodTime.CodeReadyUpTime = startupTime
 		}
