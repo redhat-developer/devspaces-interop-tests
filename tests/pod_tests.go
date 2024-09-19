@@ -49,23 +49,6 @@ var _ = KubeDescribe("[Pods]", func() {
 		Expect(err).NotTo(HaveOccurred(), "failed to get information from pod %v\n", DashboardLabel)
 	})
 
-	ginkgo.It("Check `Devfile Registry` integrity", func() {
-		hlog.Log.Info("Getting information and metrics from Devfile Registry pod")
-		devFile, err := k8sClient.Kube().CoreV1().Pods(testContext.Config.DevSpacesNamespace).List(context.TODO(), metav1.ListOptions{LabelSelector: DevFileLabel})
-
-		Expect(devFile).NotTo(BeNil())
-
-		if err != nil {
-			hlog.Log.Panic("Error on getting information about devFile pod.")
-		}
-
-		if err := DescribePod(devFile); err != nil {
-			hlog.Log.Fatal("Failed to set metadata about devFile pod.")
-		}
-
-		Expect(err).NotTo(HaveOccurred(), "failed to get information from pod %v\n", DevFileLabel)
-	})
-
 	ginkgo.It("Check `Plugin Registry` integrity", func() {
 		hlog.Log.Info("Getting information and metrics from Plugin Registry pod")
 		pluginRegistry, err := k8sClient.Kube().CoreV1().Pods(testContext.Config.DevSpacesNamespace).List(context.TODO(), metav1.ListOptions{LabelSelector: PluginRegistryLabel})

@@ -31,7 +31,6 @@ var _ = ginkgo.Describe("[Services]", func() {
 
 		Expect(confmap["che-gateway"]).NotTo(BeEmpty())
 		Expect(confmap["che-host"]).NotTo(BeEmpty())
-		Expect(confmap["devfile-registry"]).NotTo(BeEmpty())
 		Expect(confmap["devspaces-dashboard"]).NotTo(BeEmpty())
 		Expect(confmap["plugin-registry"]).NotTo(BeEmpty())
 

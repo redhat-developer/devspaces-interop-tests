@@ -21,7 +21,6 @@ const (
 	// Pod Names used to get info
 	DevSpacesOperatorLabel = "olm.owner.kind=ClusterServiceVersion"
 	DashboardLabel         = "component=devspaces-dashboard"
-	DevFileLabel           = "component=devfile-registry"
 	PluginRegistryLabel    = "component=plugin-registry"
 	DevSpacesServerLabel   = "component=devspaces"
 
