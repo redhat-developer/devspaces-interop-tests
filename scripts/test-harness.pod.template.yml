@@ -14,7 +14,6 @@ spec:
     - name: test
       image: quay.io/devspaces/ds-interop-tests:latest
       args:
-        - "--osd-provider=false"
         - "--devspaces-namespace=__DEVSPACES_NS__"
         - "--operators-namespace=__OPERATORS_NS__"
         - "--user-namespace=__USER_NS__"

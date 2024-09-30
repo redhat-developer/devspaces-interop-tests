@@ -2,7 +2,6 @@ package context
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"os"
 
 	v1 "k8s.io/api/core/v1"
@@ -83,9 +82,6 @@ type TestConfig struct {
 	// Source where catalog source is
 	SourceNamespace string
 
-	// Indicate if the tests are osd or not
-	IS_OSD bool
-
 	// check if test harness are up and working
 	UP bool
 }
@@ -103,7 +99,7 @@ func (m *metadata) WriteToJSON(outputFilename string) (err error) {
 		return err
 	}
 
-	if err = ioutil.WriteFile(outputFilename, data, os.FileMode(0644)); err != nil {
+	if err = os.WriteFile(outputFilename, data, os.FileMode(0644)); err != nil {
 		return err
 	}
 

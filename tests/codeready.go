@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"io"
-	"io/ioutil"
+	"os"
 
 	"github.com/onsi/ginkgo"
 	"github.com/redhat-developer/devspaces-interop-tests/internal/hlog"
@@ -83,7 +83,7 @@ func DescribePodLogs(podName string) {
 
 	str := buf.Bytes()
 
-	err = ioutil.WriteFile("/test-run-results/devspaces_"+podName+".log", str, 0644)
+	err = os.WriteFile("/test-run-results/devspaces_"+podName+".log", str, 0644)
 	if err != nil {
 		hlog.Log.Error("error writing logs to file")
 	}

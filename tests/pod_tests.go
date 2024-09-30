@@ -105,11 +105,11 @@ var _ = KubeDescribe("[Pods]", func() {
 		decoder := json.NewDecoder(resp.Body)
 		err = decoder.Decode(&t)
 		if err != nil {
-			testContext.Instance.DevSpacesServerIsUp = true // TODO remove
+			testContext.Instance.DevSpacesServerIsUp = true // TODO - fix this
 		} else {
 			testContext.Instance.DevSpacesServerIsUp = true
 		}
 
-		// Expect(err).NotTo(HaveOccurred())
+		// Expect(err).NotTo(HaveOccurred()) // TODO - fix this
 	})
 })
