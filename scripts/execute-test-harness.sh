@@ -18,12 +18,7 @@ OPERATORS_NAMESPACE="openshift-operators"
 USER_NAMESPACE="${USER_NAME}-devspaces"
 REPORT_DIR="test-run-results"
 
-# Clean up an environment before starting a new test
-echo "[INFO] Deleting namespaces: ${DEVSPACES_NAMESPACE}, ${USER_NAMESPACE}"
-oc delete namespace ${DEVSPACES_NAMESPACE} --wait=true --ignore-not-found
-oc delete namespace ${USER_NAMESPACE} --wait=true --ignore-not-found
-
-echo "[INFO] Creating namespaces: ${DEVSPACES_NAMESPACE}, , ${USER_NAMESPACE}"
+echo "[INFO] Creating namespaces: ${DEVSPACES_NAMESPACE}, ${USER_NAMESPACE}"
 
 oc create namespace ${DEVSPACES_NAMESPACE}
 oc create namespace ${USER_NAMESPACE}
