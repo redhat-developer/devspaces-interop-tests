@@ -58,5 +58,5 @@ If you plan to execute test harness please consider to run inside of folder `scr
 
 # Openshift CI
 
-Che-Test-Harness run as a part of Openshift CI every week. To visualize the jobs please go to [PROW](https://prow.ci.openshift.org/?job=*devspaces-interop-tests*).
+* Che-Test-Harness run as a part of Openshift CI every week. To visualize the jobs please go to [PROW](https://prow.ci.openshift.org/?job=*devspaces-interop-tests*).
 Openshift CI Job Configuration lives in [ci-operator](https://github.com/openshift/release/tree/master/ci-operator/config/redhat-developer/devspaces-interop-tests).
