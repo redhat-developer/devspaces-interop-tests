@@ -5,20 +5,28 @@ set -e
 USER_NAME=$1
 
 if [[ ${USER_NAME} == ""  ]]; then
-  export USER_NAME="admin"
-  echo "[INFO] Into a distinct namespace '<user-name>-devspaces' will run a test workspace.
-By default will be used the 'admin' user-name You can specify an user-name of your OCP cluster 
-as a parameter of this script, e.g.: 'execute-test-harness.sh <user-name>'"
+    USER_NAME=$(oc whoami)
+    echo "[INFO] Into a distinct namespace '<user-name>-devspaces' will run a test workspace.
+    By default will be used the login user-name You can specify an user-name of your OCP cluster 
+    as a parameter of this script, e.g.: 'execute-test-harness.sh <user-name>'"
 fi
+
+echo "[INFO] The user name of this OCP cluster: ${USER_NAME}"
 
 DEVSPACES_NAMESPACE="openshift-devspaces"
 OPERATORS_NAMESPACE="openshift-operators"
 USER_NAMESPACE="${USER_NAME}-devspaces"
 REPORT_DIR="test-run-results"
 
+# Clean up an environment before starting a new test
+echo "[INFO] Deleting namespaces: ${DEVSPACES_NAMESPACE}, ${USER_NAMESPACE}"
+oc delete namespace ${DEVSPACES_NAMESPACE} --wait=true --ignore-not-found
+oc delete namespace ${USER_NAMESPACE} --wait=true --ignore-not-found
+
+echo "[INFO] Creating namespaces: ${DEVSPACES_NAMESPACE}, , ${USER_NAMESPACE}"
+
 oc create namespace ${DEVSPACES_NAMESPACE}
 oc create namespace ${USER_NAMESPACE}
-oc project ${USER_NAMESPACE}
 
 ID=$(date +%s)
 OPENSHIFT_API_URL=$(oc config view --minify -o jsonpath='{.clusters[*].cluster.server}')
@@ -35,7 +43,7 @@ cat kubeconfig.template.yml |
     cat >${TMP_KUBECONFIG_YML}
 
 
-oc delete configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig || true
+oc delete configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig --ignore-not-found
 
 echo "[INFO] Creating configmap 'ds-testsuite-kubeconfig' in namespace '${OPERATORS_NAMESPACE}'"
 oc create configmap -n ${OPERATORS_NAMESPACE} ds-testsuite-kubeconfig \

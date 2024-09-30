@@ -19,7 +19,7 @@ func (o *OlmController) InstallSubscription() (err error) {
 	hlog.Log.Infof("Creating new subscription '%s' in namespace '%s'", testContext.Config.SubscriptionName, testContext.Config.OperatorsNamespace)
 
 	if testContext.Config.CSVName == "" {
-		hlog.Log.Panic("Please specify csv name in order to install Dev Spaces via olm. Eg. 'che-operator-test-harness --osd-provider=false --csv-name=devspacesoperator.v3.1.0'")
+		hlog.Log.Panic("Check value of CSV in order to install Dev Spaces via olm. E.g. Using CSV: devspacesoperator.v3.16.1")
 	}
 
 	if err := o.k8s.Create(context.TODO(), o.GetSubscriptionSpec()); err != nil {

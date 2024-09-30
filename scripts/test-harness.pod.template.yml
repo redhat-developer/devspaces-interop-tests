@@ -12,9 +12,8 @@ spec:
   containers:
     # container containing the tests
     - name: test
-      image: quay.io/devspaces/ds-interop-tests:latest
+      image: quay.io/oshmarai/ds-interop:crw-7169-1
       args:
-        - "--osd-provider=false"
         - "--devspaces-namespace=__DEVSPACES_NS__"
         - "--operators-namespace=__OPERATORS_NS__"
         - "--user-namespace=__USER_NS__"
