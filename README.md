@@ -48,7 +48,7 @@ Che Test Harness comes with a number of arguments that can be passed to the `che
 | `--source-ns` | Indicate namespace where catalog source it is installed. | `openshift-marketplace` |
 | `--catalog-name` | Indicate the name for the catalog source where you have exposed the bundles. If 'osd-provider' is true this flag it is ignored | `redhat-operators` |
 | `--package-name` | Indicate the name of codeready package. | `devspaces` |
-| `--csv-name` | Indicates csv version to install. | `devspacesoperator.v3.16.1` |
+| `--csv-name` | Indicates csv version to install. | `devspacesoperator.v3.16.0` |
 Also `che-operator-test-harness` command support all ``Ginkgo`` flags...
 
 If you plan to execute test harness please consider to run inside of folder `scripts`  execute-test-harness.sh. Please check docs in the `scripts` folder.

@@ -126,7 +126,7 @@ func registerCheFlags(flags *flag.FlagSet) {
 	flags.StringVar(&testContext.Config.SourceNamespace, "source-ns", "openshift-marketplace", "Indicate namespace where catalog source it is installed. If 'osd-provider' is true this flag it is ignored .")
 	flags.StringVar(&testContext.Config.CatalogSourceName, "catalog-name", "redhat-operators", "Indicate the name for the catalog source where you have exposed the bundles. If 'osd-provider' is true this flag it is ignored .")
 	flags.StringVar(&testContext.Config.OLMPackage, "package-name", "devspaces", "Indicate the name of Dev Spaces package. If 'osd-provider' is true this flag it is ignored .")
-	flags.StringVar(&testContext.Config.CSVName, "csv-name", "devspacesoperator.v3.16.1", "Indicates csv version to install. If 'osd-provider' is true this flag it is ignored .")
+	flags.StringVar(&testContext.Config.CSVName, "csv-name", "devspacesoperator.v3.16.0", "Indicates csv version to install. If 'osd-provider' is true this flag it is ignored .")
 
 	if testContext.Config.CSVName == "" {
 		hlog.Log.Panic("Please specify csv name in order to install Dev Spaces via olm. Eg. --csv-name=devspacesoperator.v3.16.1'")
