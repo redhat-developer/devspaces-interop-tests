@@ -5,13 +5,13 @@ set -e
 USER_NAME=$1
 
 if [[ ${USER_NAME} == ""  ]]; then
-    USER_NAME=$(oc whoami)
+    export USER_NAME="admin"
     echo "[INFO] Into a distinct namespace '<user-name>-devspaces' will run a test workspace.
-    By default will be used the login user-name You can specify an user-name of your OCP cluster 
+    By default will be used the 'admin' user-name. You can specify an user-name of your OCP cluster 
     as a parameter of this script, e.g.: 'execute-test-harness.sh <user-name>'"
 fi
 
-echo "[INFO] The user name of this OCP cluster: ${USER_NAME}"
+echo "[INFO] The user name: ${USER_NAME}"
 
 DEVSPACES_NAMESPACE="openshift-devspaces"
 OPERATORS_NAMESPACE="openshift-operators"
